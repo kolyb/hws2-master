@@ -4,6 +4,7 @@ import MessageSender from './message-sender/MessageSender'
 import s2 from '../../s1-main/App.module.css'
 import FriendMessage from './friend-message/FriendMessage'
 import avatar from './avatar.png'
+import styled from "styled-components";
 
 /*
 * 1 - описать тип MessageType
@@ -34,14 +35,14 @@ export const message0: MessageType = {
         name: 'Some Name',  // можно менять
     },
     message: {
-        text: 'some textsome textsome textsome textsome textsome textsome text', // можно менять
+        text: 'some text', // можно менять
         time: '22:00', // можно менять
     },
 }
 export const friendMessage0: MessageType = {
     id: 100,
     user: {
-        avatar: avatar, // можно менять
+        avatar: './avatar.png', // можно менять
         name: 'Friend Name', // можно менять
     },
     message: {
