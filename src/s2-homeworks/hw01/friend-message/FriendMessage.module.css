@@ -1,17 +1,26 @@
 .friendMessage {
-
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    flex-direction: column;
+    height: 100px;
+    min-width: 130px;
 }
 
 .friendImageAndText {
-
+    display: flex;
+    justify-content: left;
 }
 
 .friendImageAndText img {
-
+    height: 50px;
+    min-width: 50px;
 }
-
 .friendText {
-
+    border-radius: 5px;
+    background-color: gainsboro;
+    height: 50px;
+    min-width: 100px
 }
 
 .friendText:after {
@@ -27,5 +36,7 @@
 }
 
 .friendTime {
-
+    font-size: 10px;
+    font-weight: bold;
+    padding-left: 10px;
 }

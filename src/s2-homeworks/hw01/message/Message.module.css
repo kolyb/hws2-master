@@ -1,16 +1,29 @@
 .message {
-
+    display: flex;
+    justify-content: right;
+    align-items: end;
+    flex-direction: column;
+    height: 100px;
+    min-width: 130px;
 }
 
-.imageAndText {
 
+
+.imageAndText {
+    display: flex;
+    justify-content: right;
 }
 
 .imageAndText img {
-
+    height: 50px;
+    min-width: 50px;
 }
 
 .text {
+    border-radius: 5px;
+    background-color: #0059b3;
+    height: 50px;
+    min-width: 100px
 
 }
 
@@ -27,5 +40,7 @@
 }
 
 .time {
-
+    font-size: 10px;
+    font-weight: bold;
+    padding-right: 10px;
 }

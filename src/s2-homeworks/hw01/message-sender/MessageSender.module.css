@@ -1,13 +1,18 @@
 .sendForm {
-
+   display: flex;
+    gap: 10px;
 }
 
 .textarea {
+    border-radius: 10px 10px 10px 10px;
+    min-width: 950px;
 
 }
 
 .button {
-
+    border-radius: 10px 10px 10px 10px;
+    background-color: #0059b3;
+    width: 100px;
 }
 
 .button:hover {

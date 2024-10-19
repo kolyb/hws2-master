@@ -4,7 +4,8 @@ import MessageSender from './message-sender/MessageSender'
 import s2 from '../../s1-main/App.module.css'
 import FriendMessage from './friend-message/FriendMessage'
 import avatar from './avatar.png'
-import styled from "styled-components";
+import s from "./message/Message.module.css";
+
 
 /*
 * 1 - описать тип MessageType
@@ -35,29 +36,29 @@ export const message0: MessageType = {
         name: 'Some Name',  // можно менять
     },
     message: {
-        text: 'some text', // можно менять
-        time: '22:00', // можно менять
+        text: 'some text and something is right', // можно менять
+        time: new Date().toTimeString().slice(0, 5), // можно менять
     },
 }
 export const friendMessage0: MessageType = {
     id: 100,
     user: {
-        avatar: './avatar.png', // можно менять
+        avatar: avatar, // можно менять
         name: 'Friend Name', // можно менять
     },
     message: {
         text: 'зеркальное сообщение для тренировки css', // можно менять
-        time: '22:00', // можно менять
+        time: new Date().toTimeString().slice(0, 5), // можно менять
     },
 }
 
 const HW1 = () => {
     return (
-        <div id={'hw1'}>
-            <div className={s2.hwTitle}>Homework #1</div>
+        <div id={'hw1'} style={{ padding: '50px' }}>
+            <div className={s2.hwTitle}><h3>Homework #1</h3></div>
             <div className={s2.hw}>
                 {/*проверка отображения (не менять)*/}
-                <div>
+                <div style={{paddingBottom: 50}}>
                     <Message message={message0} />
                     <FriendMessage message={friendMessage0} />
                 </div>
